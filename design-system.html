@@ -8,15 +8,18 @@
     <link rel="stylesheet" href="./style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Design System 🍕</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quattrocento:wght@400;700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Satisfy&display=swap" rel="stylesheet">
   </head>
 
   <body>
     <div id="app">
         <header class="header-container">
             <div class="header-contains">
-                <h2 style="margin-bottom: 30px;">Teknolojik Yemekler</h2>
-                <p style="color: gold; font-style: italic; margin-top: 40px">fırsatı kaçırma</p>
-                <h1>KOD ACIKTIRIR <br> PIZZA, DOYURUR</h1> <br>
+                <h2 style="margin-bottom: 30px; font-family: Barlow; font-size: 40px;">Teknolojik Yemekler</h2>
+                <p style="font-size: 30px; color: var(--color-yellow); font-family: Satisfy; margin-top: 40px">fırsatı kaçırma</p>
+                <h1 style="font-family: 'Roboto Condensed'; font-size: 80px; font-weight: 250; letter-spacing: 0.3rem;">KOD ACIKTIRIR <br> PIZZA, DOYURUR</h1> <br>
                 <button class="primary-button">
                     ACIKTIM</button>
             </div>
@@ -41,7 +44,7 @@
                     <img src="assets/iteration-2/cta/kart-1.png">
                 </div>
                 <div class="card1-contains">
-                    <h2 style="font-size: 60px;">Özel <br> Lezzetus</h2> <br>
+                    <h2 style="font-size: 60px; font-family: Quattrocento;">Özel <br> Lezzetus</h2> <br>
                     <p style="font-size: 18px;">Position: Absolute Acı Burger</p> <br>
                     <button class="primary-button card-button">
                         SİPARİŞ VER</button>
@@ -63,7 +66,7 @@
                         <img src="assets/iteration-2/cta/kart-3.png">
                     </div>
                     <div class="card3-contains">
-                        <h2 style="color: black; font-size: 30px;"> <span style="color: red;">Çoooook</span> hızlı <br> npm gibi kurye</h2> <br>
+                        <h2 style="color: var(--color-dark-gray); font-size: 30px;"> <span style="color: var(--color-red);">Çoooook</span> hızlı <br> npm gibi kurye</h2> <br>
                         <button class="primary-button card-button">
                             SİPARİŞ VER</button>
                     </div>
@@ -71,12 +74,12 @@
             </div>
         </div>
         <div class="bottom-section">
-            <p style="color: red; font-style: italic; font-weight: bold;">en çok paketlenen menüler</p>
-            <h2 style="color: black;">Acıktıran Kodlara Doyuran Lezzetler</h2>
+            <p style="color: var(--color-red); font-style: italic; font-family: Satisfy; font-size: 30px;">en çok paketlenen menüler</p>
+            <h2 style="color: var(--color-dark-gray); font-family: 'Barlow'; font-size: 40px; font-weight: 600;">Acıktıran Kodlara Doyuran Lezzetler</h2>
             <div class="buttons2">
                 <button class="primary-button food-button">
                     <img src="assets/iteration-2/icons/1.svg">Ramen</button>
-                <button class="primary-button food-button" style="color: white; background-color: black;">
+                <button class="primary-button food-button" style="color: white; background-color: var(--color-dark-gray);">
                     <img src="assets/iteration-2/icons/2.svg">Pizza</button>
                 <button class="primary-button food-button">
                     <img src="assets/iteration-2/icons/3.svg">Burger</button>
@@ -93,12 +96,38 @@
                 <div class="food">
                     <img src="assets/iteration-2/pictures/food-1.png">
                     <div>
-                        <p style="color: black; font-weight: bold;">Terminal Pizza</p>
+                        <p style="color: var(--color-dark-gray); font-weight: bold;">Terminal Pizza</p>
                         <div>
-                            <p style="color: gray; font-weight: bold;">4.9</p>
-                            <div>
-                                <p style="color: black; font-weight: bold;">60TL</p>
-                                <p style="color: gray; font-weight: bold;">(200)</p>
+                            <p class="p-text">4.9</p>
+                            <div class="text">
+                                <p style="color: var(--color-dark-gray); font-weight: bold;">60TL</p>
+                                <p style="color: var(--color-light-gray); font-weight: bold;">(200)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="food">
+                    <img src="assets/iteration-2/pictures/food-2.png">
+                    <div>
+                        <p style="color: var(--color-dark-gray); font-weight: bold;">Position Absolute Acı Pizza</p>
+                        <div>
+                            <p class="p-text">4.9</p>
+                            <div class="text">
+                                <p style="color: var(--color-dark-gray); font-weight: bold;">60TL</p>
+                                <p style="color: var(--color-light-gray); font-weight: bold;">(200)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="food">
+                    <img src="assets/iteration-2/pictures/food-2.png">
+                    <div>
+                        <p style="color: var(--color-dark-gray); font-weight: bold;">useEffect Tavuklu Burger</p>
+                        <div>
+                            <p class="p-text">4.9</p>
+                            <div class="text">
+                                <p style="color: var(--color-dark-gray); font-weight: bold;">60TL</p>
+                                <p style="color: var(--color-light-gray); font-weight: bold;">(200)</p>
                             </div>
                         </div>
                     </div>
