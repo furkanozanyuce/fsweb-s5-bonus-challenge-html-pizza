@@ -14,7 +14,147 @@
   -webkit-text-size-adjust: 100%;
 }
 
-a {
+
+body {
+  color: white;
+}
+
+
+.header-container {
+  background: url(assets/iteration-1/home-banner.png);
+  width: 100;
+  height: 100vh;
+}
+
+.buttons {
+  background: white;
+  display: flex;
+  justify-content: center;
+}
+
+.buttons2 {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+.cards {
+  background-color: lightgoldenrodyellow;
+}
+
+.bottom-section {
+  background-color: lightgoldenrodyellow;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 30px;
+  gap: 5px;
+}
+
+.bottom-section2 {
+  background-color: lightgoldenrodyellow;
+}
+
+.header-contains {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 30px;
+}
+
+.header-contains h1 {
+  font-size: 60px;
+  letter-spacing: 0.4rem;
+  font-weight: lighter;
+  text-align: center;
+}
+
+.primary-button {
+  background-color: gold;
+  color: black;
+  border-radius: 2rem;
+  font-size: 1.2rem;
+  border: 0;
+  font-weight: bold;
+  padding: 0.5rem 2rem;
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
+}
+
+.primary-button:hover {
+  opacity: 0.7;
+  background-color: lightgray;
+}
+
+.food-button {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.card-button {
+  background-color: white;
+  color: red;
+  font-size: medium;
+  padding: 0.8rem 1.5rem;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding-top: 50px;
+}
+
+.card1 {
+  position: relative;
+  display: flex;
+  border-radius: 5rem;
+}
+
+.card1 img, .card2 img, .card3 img {
+  border-radius: 0.8rem;
+}
+
+.card1-contains {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+
+.card2 {
+  position: relative;
+  display: flex;
+}
+
+.card2-contains {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+
+.card3 {
+  position: relative;
+  display: flex;
+}
+
+.card3-contains {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+
+.card2-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+/* a {
   font-weight: 500;
   color: #646cff;
   text-decoration: inherit;
@@ -94,4 +234,4 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
-}
+} */
