@@ -13,12 +13,16 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 
+/* colors i added */
+
   --color-yellow: #FDC913;
   --color-light-gray: #5F5F5F;
   --color-dark-gray: #292929;
   --color-red: #CE2829;
   --color-beige: #FAF7F2;
 }
+
+/* fonts i added */
 
 .satisfy-regular {
   font-family: "Satisfy", cursive;
@@ -51,46 +55,17 @@
 }
 
 
+
 body {
   color: white;
 }
 
+/* header kısmı */
 
 .header-container {
   background: url(assets/iteration-1/home-banner.png);
   width: 100;
-  height: 100vh;
-}
-
-.buttons {
-  background: white;
-  display: flex;
-  justify-content: center;
-}
-
-.buttons2 {
-  display: flex;
-  justify-content: center;
-  padding-top: 10px;
-}
-
-.cards {
-  background-color: var(--color-beige);
-}
-
-.bottom-section {
-  background-color: var(--color-beige);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  padding-top: 30px;
-  gap: 5px;
-  padding-bottom: 30px;
-}
-
-.bottom-section2 {
-  background-color: var(--color-beige);
+  height: 1080px;
 }
 
 .header-contains {
@@ -106,6 +81,26 @@ body {
   letter-spacing: 0.4rem;
   font-weight: lighter;
   text-align: center;
+}
+
+.header-contains h2 {
+  margin-bottom: 30px;
+  font-family: Barlow;
+  font-size: 40px;
+}
+
+.header-contains p {
+  font-size: 30px;
+  color: var(--color-yellow);
+  font-family: Satisfy;
+  margin-top: 40px
+}
+
+.header-contains h1 {
+  font-family: 'Roboto Condensed';
+  font-size: 80px;
+  font-weight: 250;
+  letter-spacing: 0.3rem;
 }
 
 .primary-button {
@@ -126,23 +121,29 @@ body {
   background-color: var(--color-light-gray);
 }
 
+
+
+.buttons {
+  background: white;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
 .food-button {
   background-color: white;
   display: flex;
   align-items: center;
   gap: 0.8rem;
   font-family: "Roboto Condensed";
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
-.card-button {
-  background-color: white;
-  color: var(--color-red);
-  font-size: medium;
-  padding: 0.8rem 1.5rem;
-  font-family: "Roboto Condensed";
-}
+
 
 .cards {
+  background-color: var(--color-beige);
   display: flex;
   justify-content: center;
   gap: 10px;
@@ -155,14 +156,35 @@ body {
   border-radius: 5rem;
 }
 
-.card1 img, .card2 img, .card3 img {
-  border-radius: 0.8rem;
-}
-
 .card1-contains {
   position: absolute;
   top: 30px;
   left: 30px;
+}
+
+.card1-contains h2 {
+  font-size: 60px;
+  font-family: Quattrocento;
+}
+
+.card1-contains p {
+  font-size: 18px;
+}
+
+.card-button {
+  background-color: white;
+  color: var(--color-red);
+  font-size: medium;
+  padding: 0.8rem 1.5rem;
+  font-family: "Roboto Condensed";
+}
+
+
+
+.card2-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .card2 {
@@ -176,6 +198,12 @@ body {
   left: 30px;
 }
 
+.card2-contains h2 {
+  font-size: 30px;
+}
+
+
+
 .card3 {
   position: relative;
   display: flex;
@@ -187,10 +215,61 @@ body {
   left: 30px;
 }
 
-.card2-container {
+.card3-contains h2 {
+  color: var(--color-dark-gray);
+  font-size: 30px;
+}
+
+.card1 img, .card2 img, .card3 img {
+  border-radius: 0.8rem;
+}
+
+
+/* bottom section */
+
+.bottom-section {
+  background-color: var(--color-beige);
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
-  justify-content: space-between;
+  padding-top: 30px;
+  gap: 5px;
+  padding-bottom: 30px;
+}
+
+.bottom-section p {
+  color: var(--color-red);
+  font-style: italic;
+  font-family: Satisfy;
+  font-size: 30px;
+}
+
+.bottom-section h2 {
+  color: var(--color-dark-gray);
+  font-family: 'Barlow';
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.buttons2 {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+  gap: 2rem;
+}
+
+
+
+.bottom-section2 {
+  background-color: var(--color-beige);
+}
+
+.foods {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  padding-bottom: 20px;
 }
 
 .food {
@@ -204,11 +283,10 @@ body {
   }
 }
 
-.foods {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-  padding-bottom: 20px;
+.p-text {
+  color: var(--color-light-gray);
+  font-weight: bold;
+  position: absolute;
 }
 
 .text {
@@ -220,11 +298,62 @@ body {
   margin-top: 5px;
 }
 
-.p-text {
-  color: var(--color-light-gray);
-  font-weight: bold;
-  position: absolute;
+
+/* footer */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
 }
+
+.end2 {
+  display: flex;
+}
+
+.left-side {
+  display: flex;
+
+}
+
+.left-right {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.right-side {
+  display: flex;
+
+}
+
+.end {
+  display: flex;
+  justify-content: center;
+}
+
+.right-side2 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.left-left li, .right-side2 li {
+  list-style-type: none;
+}
+
+.left-left {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+
+
+
+
+
+
+
 
 
 /* a {
