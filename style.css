@@ -371,6 +371,43 @@ ul li {
 
 
 
+@media only screen and (max-width: 500px) {
+  body {
+    min-width: 300px;
+  }
+
+  .buttons {
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .buttons2 {
+    flex-direction: column;
+  }
+
+  .foods {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+
+
+}
+
+
+
 
 
 
